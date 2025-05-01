@@ -1,7 +1,7 @@
 body {
   margin: 0;
   height: 100vh;
-  background-color: black;
+
   overflow: hidden;
 }
 
@@ -16,6 +16,18 @@ span {
   top: 50%;
   transform: translate(-50%, -50%);
   animation: animate 6s linear;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background-color: black 50%;
+  filter: brightness(0.5);
 }
 
 @keyframes animate {
